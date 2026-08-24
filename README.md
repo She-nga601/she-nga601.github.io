@@ -1,2 +1,2 @@
 # shenga601
-Website resi SHE-NGA 601
+Website resmi SHE-NGA 601
