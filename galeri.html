@@ -18,6 +18,10 @@ content="Galeri foto kegiatan warga, seni budaya, hiburan dan dokumentasi Jatimu
 box-sizing:border-box
 }
 
+html{
+scroll-behavior:smooth
+}
+
 body{
 margin:0;
 font-family:Arial,sans-serif;
@@ -120,14 +124,26 @@ background:#f8fafc;
 border-radius:18px;
 overflow:hidden;
 border:1px solid #e5e7eb;
-box-shadow:0 5px 15px #0001
+box-shadow:0 5px 15px #0001;
+transition:.3s
+}
+
+.gallery-item:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 25px #0002
 }
 
 .gallery-item img{
 width:100%;
 height:260px;
 object-fit:cover;
-display:block
+display:block;
+cursor:pointer;
+transition:.3s
+}
+
+.gallery-item img:hover{
+transform:scale(1.03)
 }
 
 .gallery-content{
@@ -162,6 +178,45 @@ margin-top:10px
 background:#dc2626
 }
 
+/* LIGHTBOX */
+
+.lightbox{
+display:none;
+position:fixed;
+z-index:9999;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.92);
+align-items:center;
+justify-content:center;
+padding:20px
+}
+
+.lightbox img{
+max-width:95%;
+max-height:90%;
+object-fit:contain;
+border-radius:12px;
+box-shadow:0 10px 40px #000
+}
+
+.close{
+position:absolute;
+top:15px;
+right:25px;
+color:white;
+font-size:45px;
+font-weight:bold;
+cursor:pointer;
+line-height:1
+}
+
+.close:hover{
+color:#facc15
+}
+
 footer{
 background:#111827;
 color:#cbd5e1;
@@ -191,6 +246,17 @@ padding:22px
 
 .gallery-item img{
 height:220px
+}
+
+.lightbox img{
+max-width:100%;
+max-height:85%
+}
+
+.close{
+top:10px;
+right:18px;
+font-size:40px
 }
 
 }
@@ -223,8 +289,6 @@ SHE-NGA <b>601</b>
 
 </nav>
 
-</header>
-
 
 <section class="hero">
 
@@ -237,6 +301,8 @@ Merekam momen, menyimpan kenangan.
 </p>
 
 </section>
+
+</header>
 
 
 <main>
@@ -262,7 +328,8 @@ Foto kegiatan, seni budaya, dan keseruan warga Jatimulya 1.
 
 <img
 src="1000149684.jpg"
-alt="Hajat Bumi Jatimulya 1">
+alt="Hajat Bumi Jatimulya 1"
+onclick="openLightbox(this.src)">
 
 <div class="gallery-content">
 
@@ -282,7 +349,8 @@ Hajat Bumi Jatimulya 1.
 
 <img
 src="1000146084.jpg"
-alt="Seni dan Budaya Jatimulya 1">
+alt="Seni dan Budaya Jatimulya 1"
+onclick="openLightbox(this.src)">
 
 <div class="gallery-content">
 
@@ -302,7 +370,8 @@ masyarakat kepada generasi berikutnya.
 
 <img
 src="1000149664.jpg"
-alt="Pawai HUT RI ke-81">
+alt="Pawai HUT RI ke-81"
+onclick="openLightbox(this.src)">
 
 <div class="gallery-content">
 
@@ -364,6 +433,25 @@ target="_blank">
 </main>
 
 
+<!-- LIGHTBOX -->
+
+<div
+class="lightbox"
+id="lightbox"
+onclick="closeLightbox()">
+
+<span class="close">
+&times;
+</span>
+
+<img
+id="lightbox-img"
+src=""
+alt="Foto SHE-NGA 601">
+
+</div>
+
+
 <footer>
 
 © 2026 SHE-NGA 601 · Jatimulya 1, Mekarjati, Karawang Barat
@@ -387,6 +475,35 @@ Kontak
 </a>
 
 </footer>
+
+
+<script>
+
+function openLightbox(src){
+
+document.getElementById("lightbox-img").src=src;
+
+document.getElementById("lightbox").style.display="flex";
+
+}
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+document.addEventListener("keydown",function(event){
+
+if(event.key==="Escape"){
+
+closeLightbox();
+
+}
+
+});
+
+</script>
 
 
 </body>
