@@ -1,156 +1,425 @@
 <!doctype html>
 <html lang="id">
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>SHE-NGA 601 | Media Warga Jatimulya 1</title>
-<meta name="description" content="SHE-NGA 601 media warga, budaya, hiburan dan dokumentasi Jatimulya 1 Mekarjati Karawang Barat.">
+
+<meta name="description"
+content="SHE-NGA 601 media warga Jatimulya 1 Mekarjati Karawang Barat. Seni, budaya, musik, hiburan dan dokumentasi kegiatan warga.">
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;line-height:1.7}
-header{background:linear-gradient(135deg,#111827,#6d28d9,#db2777);color:white}
-nav{max-width:1100px;margin:auto;padding:20px;display:flex;justify-content:space-between;gap:15px;align-items:center}
-.logo{font-size:27px;font-weight:900}
-.logo b{color:#facc15}
-nav a{color:white;text-decoration:none;margin-left:14px;font-weight:700}
 
-.hero{text-align:center;padding:70px 20px 105px;max-width:950px;margin:auto}
-.hero h1{font-size:clamp(42px,8vw,75px);margin:0}
-.hero h1 span{color:#facc15}
-.hero p{font-size:20px}
+*{
+box-sizing:border-box
+}
 
-.btn{display:inline-block;background:#facc15;color:#111;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:800;margin:5px}
-.btn.alt{background:white;color:#6d28d9}
+html{
+scroll-behavior:smooth
+}
 
-main{max-width:1100px;margin:-45px auto 60px;padding:0 18px}
-.card{background:white;border-radius:20px;padding:28px;margin-bottom:24px;box-shadow:0 10px 30px #0001}
-.title{text-align:center}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+color:#172033;
+line-height:1.7
+}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.item{background:#f8fafc;padding:22px;border-radius:15px;border:1px solid #e5e7eb}
-.icon{font-size:34px}
+header{
+background:linear-gradient(135deg,#111827,#6d28d9,#db2777);
+color:white;
+position:relative;
+overflow:hidden
+}
+
+nav{
+max-width:1100px;
+margin:auto;
+padding:20px;
+display:flex;
+justify-content:space-between;
+gap:15px;
+align-items:center
+}
+
+.logo{
+font-size:27px;
+font-weight:900
+}
+
+.logo b{
+color:#facc15
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:14px;
+font-weight:700
+}
+
+nav a:hover{
+color:#facc15
+}
+
+.hero{
+text-align:center;
+padding:75px 20px 110px;
+max-width:1000px;
+margin:auto
+}
+
+.hero h1{
+font-size:clamp(45px,9vw,80px);
+margin:0;
+line-height:1.1
+}
+
+.hero h1 span{
+color:#facc15
+}
+
+.hero p{
+font-size:20px;
+max-width:750px;
+margin:22px auto
+}
+
+.btn{
+display:inline-block;
+background:#facc15;
+color:#111;
+padding:13px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:800;
+margin:5px
+}
+
+.btn.alt{
+background:white;
+color:#6d28d9
+}
+
+.btn.youtube{
+background:#dc2626;
+color:white
+}
+
+main{
+max-width:1100px;
+margin:-50px auto 60px;
+padding:0 18px
+}
+
+.card{
+background:white;
+border-radius:22px;
+padding:30px;
+margin-bottom:25px;
+box-shadow:0 10px 30px #0001
+}
+
+.title{
+text-align:center;
+margin-bottom:25px
+}
+
+.title h2{
+margin-bottom:5px;
+font-size:30px
+}
+
+.title p{
+margin-top:0;
+color:#64748b
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:18px
+}
+
+.item{
+background:#f8fafc;
+padding:22px;
+border-radius:17px;
+border:1px solid #e5e7eb
+}
+
+.item:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px #0001
+}
+
+.icon{
+font-size:38px
+}
 
 .photo{
 width:100%;
-height:220px;
+height:230px;
 object-fit:cover;
-border-radius:15px;
+border-radius:16px;
 display:block;
 margin-bottom:15px
 }
 
-.heroimg{
-min-height:170px;
+.video{
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
 border-radius:16px;
-background:linear-gradient(135deg,#312e81,#c026d3);
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-color:white;
-font-size:22px;
-font-weight:bold;
-text-align:center
+margin-top:15px
 }
 
-article{padding:16px 0;border-bottom:1px solid #ddd}
+.video iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0
+}
 
-footer{background:#111827;color:#cbd5e1;text-align:center;padding:35px}
-footer a{color:#fff;margin:0 7px}
+.banner{
+background:linear-gradient(135deg,#dc2626,#b91c1c);
+color:white;
+text-align:center;
+padding:30px;
+border-radius:20px;
+margin-bottom:25px
+}
+
+.banner h2{
+font-size:32px;
+margin:0 0 8px
+}
+
+.highlight{
+background:#f8fafc;
+border-left:5px solid #6d28d9;
+padding:20px;
+border-radius:10px
+}
+
+footer{
+background:#111827;
+color:#cbd5e1;
+text-align:center;
+padding:35px
+}
+
+footer a{
+color:white;
+margin:0 7px
+}
 
 @media(max-width:700px){
-nav{display:block}
-nav a{display:inline-block;margin:8px 8px 0 0}
-.hero{padding-top:45px}
-.hero p{font-size:17px}
-.photo{height:200px}
+
+nav{
+display:block
 }
+
+nav a{
+display:inline-block;
+margin:8px 8px 0 0
+}
+
+.hero{
+padding-top:50px
+}
+
+.hero p{
+font-size:17px
+}
+
+.card{
+padding:22px
+}
+
+.photo{
+height:200px
+}
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <header>
+
 <nav>
-<div class="logo">SHE-NGA <b>601</b></div>
+
+<div class="logo">
+SHE-NGA <b>601</b>
+</div>
 
 <div>
+
 <a href="index.html">Beranda</a>
 <a href="artikel.html">Artikel</a>
 <a href="galeri.html">Galeri</a>
 <a href="tentang.html">Tentang</a>
 <a href="kontak.html">Kontak</a>
+
 </div>
+
 </nav>
-</header>
+
 
 <section class="hero">
 
-<h1>SHE-NGA <span>601</span></h1>
+<h1>
+SHE-NGA <span>601</span>
+</h1>
 
 <p>
-Media warga yang merekam cerita, kreativitas, budaya, musik,
-dan keseruan kegiatan Jatimulya 1 Mekarjati, Karawang Barat.
+Media warga yang merekam cerita, kreativitas, seni, budaya,
+musik, hiburan, dan keseruan kegiatan Jatimulya 1 Mekarjati,
+Karawang Barat.
 </p>
 
-<a class="btn" href="artikel.html">📰 Baca Artikel</a>
-<a class="btn alt" href="galeri.html">📸 Lihat Galeri</a>
+<a class="btn" href="artikel.html">
+📰 Baca Cerita
+</a>
+
+<a class="btn alt" href="galeri.html">
+📸 Lihat Galeri
+</a>
+
+<a class="btn youtube"
+href="https://www.youtube.com/@Sikabayan601"
+target="_blank">
+▶️ YouTube SHE-NGA 601
+</a>
 
 </section>
+
+</header>
+
 
 <main>
 
-<section class="card">
 
-<div class="title">
-<h2>Selamat Datang 👋</h2>
-<p>Cerita dari warga, untuk warga.</p>
-</div>
+<section class="banner">
 
-<div class="grid">
+<h2>🇮🇩 HUT RI KE-81 🇮🇩</h2>
 
-<div class="item">
-<div class="icon">🎉</div>
-<h3>Kegiatan Warga</h3>
-<p>Dokumentasi acara, perlombaan, perayaan, dan kegiatan masyarakat.</p>
-</div>
+<p>
+Semarak kemerdekaan warga Jatimulya 1 Mekarjati,
+Karawang Barat · 17 Agustus 2026
+</p>
 
-<div class="item">
-<div class="icon">🎤</div>
-<h3>Musik & Hiburan</h3>
-<p>Karaoke, pertunjukan, checksound, dan hiburan lokal.</p>
-</div>
+<a class="btn alt" href="artikel.html">
+Baca Cerita HUT RI
+</a>
 
-<div class="item">
-<div class="icon">🎭</div>
-<h3>Seni & Budaya</h3>
-<p>Mengenalkan kesenian dan kreativitas daerah.</p>
-</div>
-
-</div>
 </section>
 
 
 <section class="card">
 
 <div class="title">
-<h2>📸 Cerita Bergambar SHE-NGA 601</h2>
-<p>Dokumentasi kegiatan dan budaya warga.</p>
+
+<h2>❤️ Selamat Datang di SHE-NGA 601</h2>
+
+<p>
+Cerita dari warga, untuk warga.
+</p>
+
 </div>
+
 
 <div class="grid">
 
+
 <div class="item">
 
-<img class="photo"
+<div class="icon">🎉</div>
+
+<h3>Kegiatan Warga</h3>
+
+<p>
+Dokumentasi acara, perlombaan, perayaan,
+dan kegiatan masyarakat.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="icon">🎤</div>
+
+<h3>Musik & Hiburan</h3>
+
+<p>
+Karaoke, pertunjukan, checksound,
+dan hiburan lokal.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<div class="icon">🎭</div>
+
+<h3>Seni & Budaya</h3>
+
+<p>
+Mengenalkan kesenian dan kreativitas
+daerah kepada masyarakat.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="card">
+
+<div class="title">
+
+<h2>📸 Cerita Bergambar</h2>
+
+<p>
+Beberapa momen yang berhasil kami abadikan.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="item">
+
+<img
+class="photo"
 src="1000149684.jpg"
-alt="Kegiatan Hajat Bumi">
+alt="Hajat Bumi Jatimulya 1">
 
 <h3>🎉 Hajat Bumi</h3>
 
 <p>
-Dokumentasi kegiatan dan kebersamaan warga dalam acara Hajat Bumi.
+Kebersamaan warga dalam kegiatan Hajat Bumi.
 </p>
 
 </div>
@@ -158,14 +427,15 @@ Dokumentasi kegiatan dan kebersamaan warga dalam acara Hajat Bumi.
 
 <div class="item">
 
-<img class="photo"
+<img
+class="photo"
 src="1000146084.jpg"
 alt="Seni dan Budaya">
 
 <h3>🎭 Seni & Budaya</h3>
 
 <p>
-Merekam seni, budaya, dan kreativitas masyarakat Jatimulya 1.
+Merekam seni dan budaya lokal Jatimulya 1.
 </p>
 
 </div>
@@ -173,83 +443,87 @@ Merekam seni, budaya, dan kreativitas masyarakat Jatimulya 1.
 
 <div class="item">
 
-<img class="photo"
+<img
+class="photo"
 src="1000149664.jpg"
 alt="Pawai HUT RI">
 
 <h3>🇮🇩 Pawai HUT RI</h3>
 
 <p>
-Semarak warga Jatimulya 1 dalam memeriahkan HUT Kemerdekaan RI.
+Semarak warga memeriahkan kemerdekaan Indonesia.
 </p>
 
 </div>
+
 
 </div>
 
 </section>
 
 
-
 <section class="card">
 
 <div class="title">
+
 <h2>🎬 Video Pilihan SHE-NGA 601</h2>
-<p>Dokumentasi warga, seni budaya, dan hiburan Jatimulya 1.</p>
+
+<p>
+Saksikan dokumentasi kegiatan warga.
+</p>
+
 </div>
 
-<div style="margin-bottom:25px">
 
 <h3>🇮🇩 Pawai Sepeda Hias HUT RI ke-81</h3>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px">
+<div class="video">
 
 <iframe
 src="https://www.youtube.com/embed/q5GLmwI9kmI"
-title="Pawai Sepeda Hias Warga Jatimulya 1"
-style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:16px"
+title="Pawai Sepeda Hias HUT RI ke-81"
 allowfullscreen>
 </iframe>
 
 </div>
 
-</div>
 
-<div class="grid">
+<div class="grid" style="margin-top:20px">
+
 
 <div class="item">
 
 <h3>🎭 Full Bodoran Topeng Pendul</h3>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+<div class="video">
 
 <iframe
 src="https://www.youtube.com/embed/xhwABJPSlhM"
 title="Full Bodoran Topeng Pendul"
-style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px"
 allowfullscreen>
 </iframe>
 
 </div>
 
 </div>
+
 
 <div class="item">
 
 <h3>🎤 Lomba Karaoke HUT RI ke-81</h3>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+<div class="video">
 
 <iframe
 src="https://www.youtube.com/embed/fmbOrIg3RPU"
-title="Lomba Karaoke Peserta 1 HUT RI ke-81"
-style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px"
+title="Lomba Karaoke HUT RI ke-81"
 allowfullscreen>
 </iframe>
 
 </div>
 
 </div>
+
 
 </div>
 
@@ -259,46 +533,89 @@ allowfullscreen>
 <section class="card">
 
 <div class="title">
+
 <h2>📰 Cerita Terbaru</h2>
+
 </div>
+
 
 <div class="grid">
 
+
 <div class="item">
 
-<h3>Semarak HUT RI ke-81</h3>
+<h3>🇮🇩 Semarak HUT RI ke-81</h3>
 
 <p>
 Keseruan warga dalam memeriahkan Hari Kemerdekaan Indonesia.
 </p>
 
+<a class="btn"
+href="artikel.html">
+Baca →
+</a>
+
 </div>
 
 
 <div class="item">
 
-<h3>Lomba Karaoke Warga</h3>
+<h3>🎤 Lomba Karaoke Warga</h3>
 
 <p>
 Ajang hiburan dan kreativitas yang mempererat kebersamaan.
 </p>
 
+<a class="btn"
+href="artikel.html">
+Baca →
+</a>
+
 </div>
 
 
 <div class="item">
 
-<h3>Menjaga Seni Lokal</h3>
+<h3>🎭 Menjaga Seni Lokal</h3>
 
 <p>
 Mengenalkan budaya kepada generasi berikutnya.
 </p>
 
+<a class="btn"
+href="tentang.html">
+Selengkapnya →
+</a>
+
 </div>
+
 
 </div>
 
 </section>
+
+
+<section class="card">
+
+<div class="highlight">
+
+<h2>❤️ Dari Warga, Untuk Warga</h2>
+
+<p>
+SHE-NGA 601 hadir untuk merekam cerita-cerita kecil
+yang memiliki arti bagi masyarakat.
+</p>
+
+<p>
+Semoga website ini menjadi ruang untuk mengenalkan
+kreativitas, seni, budaya, musik, hiburan, dan berbagai
+kegiatan warga kepada masyarakat yang lebih luas.
+</p>
+
+</div>
+
+</section>
+
 
 </main>
 
@@ -307,15 +624,27 @@ Mengenalkan budaya kepada generasi berikutnya.
 
 © 2026 SHE-NGA 601 · Jatimulya 1, Mekarjati, Karawang Barat
 
-<br>
+<br><br>
 
-<a href="privacy.html">Kebijakan Privasi</a>
+<a href="privacy.html">
+Kebijakan Privasi
+</a>
+
 ·
-<a href="disclaimer.html">Disclaimer</a>
+
+<a href="disclaimer.html">
+Disclaimer
+</a>
+
 ·
-<a href="kontak.html">Kontak</a>
+
+<a href="kontak.html">
+Kontak
+</a>
 
 </footer>
 
+
 </body>
+
 </html>
