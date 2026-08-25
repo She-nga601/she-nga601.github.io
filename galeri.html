@@ -1,16 +1,22 @@
-```html
 <!doctype html>
 <html lang="id">
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Galeri | SHE-NGA 601</title>
 
-<meta name="description" content="Galeri foto kegiatan warga Jatimulya 1 Mekarjati Karawang Barat.">
+<meta name="description"
+content="Galeri foto kegiatan warga, seni budaya, hiburan dan dokumentasi Jatimulya 1 Mekarjati Karawang Barat.">
 
 <style>
-*{box-sizing:border-box}
+
+*{
+box-sizing:border-box
+}
 
 body{
 margin:0;
@@ -51,20 +57,28 @@ margin-left:14px;
 font-weight:700
 }
 
+nav a:hover{
+color:#facc15
+}
+
 .hero{
 text-align:center;
-padding:55px 20px 70px;
+padding:55px 20px 75px;
 color:white;
 background:linear-gradient(135deg,#111827,#6d28d9,#db2777)
 }
 
 .hero h1{
-font-size:clamp(38px,7vw,65px);
+font-size:clamp(40px,7vw,65px);
 margin:0
 }
 
 .hero h1 span{
 color:#facc15
+}
+
+.hero p{
+font-size:18px
 }
 
 main{
@@ -75,8 +89,9 @@ padding:0 18px
 
 .card{
 background:white;
-border-radius:20px;
-padding:28px;
+border-radius:22px;
+padding:30px;
+margin-bottom:25px;
 box-shadow:0 10px 30px #0001
 }
 
@@ -85,38 +100,66 @@ text-align:center;
 margin-bottom:25px
 }
 
-.gallery{
+.title h2{
+font-size:30px;
+margin-bottom:5px
+}
+
+.title p{
+color:#64748b
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px
 }
 
-.photo-card{
+.gallery-item{
 background:#f8fafc;
 border-radius:18px;
 overflow:hidden;
 border:1px solid #e5e7eb;
-box-shadow:0 5px 18px #0001
+box-shadow:0 5px 15px #0001
 }
 
-.photo-card img{
+.gallery-item img{
 width:100%;
-height:250px;
+height:260px;
 object-fit:cover;
-display:block;
-transition:.3s
+display:block
 }
 
-.photo-card img:hover{
-transform:scale(1.03)
+.gallery-content{
+padding:20px
 }
 
-.caption{
-padding:18px
+.gallery-content h3{
+margin-top:0;
+color:#6d28d9
 }
 
-.caption h3{
-margin:0 0 8px
+.highlight{
+background:#f8fafc;
+border-left:5px solid #6d28d9;
+padding:20px;
+border-radius:10px;
+margin-top:25px
+}
+
+.btn{
+display:inline-block;
+background:#6d28d9;
+color:white;
+padding:12px 22px;
+border-radius:30px;
+text-decoration:none;
+font-weight:800;
+margin-top:10px
+}
+
+.btn.youtube{
+background:#dc2626
 }
 
 footer{
@@ -142,19 +185,23 @@ display:inline-block;
 margin:8px 8px 0 0
 }
 
-.hero{
-padding-top:40px
+.card{
+padding:22px
 }
 
-.photo-card img{
+.gallery-item img{
 height:220px
 }
 
 }
+
 </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -167,13 +214,9 @@ SHE-NGA <b>601</b>
 <div>
 
 <a href="index.html">Beranda</a>
-
 <a href="artikel.html">Artikel</a>
-
 <a href="galeri.html">Galeri</a>
-
 <a href="tentang.html">Tentang</a>
-
 <a href="kontak.html">Kontak</a>
 
 </div>
@@ -185,10 +228,12 @@ SHE-NGA <b>601</b>
 
 <section class="hero">
 
-<h1>📸 Galeri <span>SHE-NGA 601</span></h1>
+<h1>
+📸 Galeri <span>SHE-NGA 601</span>
+</h1>
 
 <p>
-Dokumentasi kegiatan, seni, budaya, dan kebersamaan warga.
+Merekam momen, menyimpan kenangan.
 </p>
 
 </section>
@@ -196,34 +241,36 @@ Dokumentasi kegiatan, seni, budaya, dan kebersamaan warga.
 
 <main>
 
+
 <section class="card">
 
 <div class="title">
 
-<h2>📷 Koleksi Foto Warga</h2>
+<h2>📷 Dokumentasi Warga</h2>
 
 <p>
-Cerita Jatimulya 1 dalam sebuah gambar.
+Foto kegiatan, seni budaya, dan keseruan warga Jatimulya 1.
 </p>
 
 </div>
 
 
-<div class="gallery">
+<div class="grid">
 
 
-<div class="photo-card">
+<div class="gallery-item">
 
 <img
 src="1000149684.jpg"
 alt="Hajat Bumi Jatimulya 1">
 
-<div class="caption">
+<div class="gallery-content">
 
 <h3>🎉 Hajat Bumi</h3>
 
 <p>
-Dokumentasi kegiatan dan kebersamaan warga dalam acara Hajat Bumi.
+Dokumentasi kebersamaan warga dalam kegiatan
+Hajat Bumi Jatimulya 1.
 </p>
 
 </div>
@@ -231,18 +278,19 @@ Dokumentasi kegiatan dan kebersamaan warga dalam acara Hajat Bumi.
 </div>
 
 
-<div class="photo-card">
+<div class="gallery-item">
 
 <img
 src="1000146084.jpg"
 alt="Seni dan Budaya Jatimulya 1">
 
-<div class="caption">
+<div class="gallery-content">
 
 <h3>🎭 Seni & Budaya</h3>
 
 <p>
-Merekam seni dan kreativitas masyarakat Jatimulya 1.
+Mengenalkan seni, budaya, dan kreativitas
+masyarakat kepada generasi berikutnya.
 </p>
 
 </div>
@@ -250,28 +298,68 @@ Merekam seni dan kreativitas masyarakat Jatimulya 1.
 </div>
 
 
-<div class="photo-card">
+<div class="gallery-item">
 
 <img
 src="1000149664.jpg"
-alt="Pawai HUT RI Jatimulya 1">
+alt="Pawai HUT RI ke-81">
 
-<div class="caption">
+<div class="gallery-content">
 
-<h3>🇮🇩 Pawai HUT RI</h3>
+<h3>🇮🇩 Pawai HUT RI ke-81</h3>
 
 <p>
-Semarak warga dalam memeriahkan HUT Kemerdekaan Republik Indonesia.
+Semarak warga Jatimulya 1 dalam memeriahkan
+Hari Kemerdekaan Republik Indonesia.
 </p>
 
 </div>
 
 </div>
 
+
+</div>
+
+
+<div class="highlight">
+
+<strong>
+❤️ Dari Warga, Untuk Warga
+</strong>
+
+<br>
+
+Setiap foto adalah bagian dari cerita dan kenangan
+masyarakat Jatimulya 1.
 
 </div>
 
 </section>
+
+
+<section class="card">
+
+<div class="title">
+
+<h2>🎬 Video Dokumentasi</h2>
+
+<p>
+Lihat dokumentasi lengkap di channel YouTube SHE-NGA 601.
+</p>
+
+<a
+class="btn youtube"
+href="https://www.youtube.com/@Sikabayan601"
+target="_blank">
+
+▶️ Kunjungi Channel YouTube
+
+</a>
+
+</div>
+
+</section>
+
 
 </main>
 
@@ -280,16 +368,27 @@ Semarak warga dalam memeriahkan HUT Kemerdekaan Republik Indonesia.
 
 © 2026 SHE-NGA 601 · Jatimulya 1, Mekarjati, Karawang Barat
 
-<br>
+<br><br>
 
-<a href="privacy.html">Kebijakan Privasi</a>
+<a href="privacy.html">
+Kebijakan Privasi
+</a>
+
 ·
-<a href="disclaimer.html">Disclaimer</a>
+
+<a href="disclaimer.html">
+Disclaimer
+</a>
+
 ·
-<a href="kontak.html">Kontak</a>
+
+<a href="kontak.html">
+Kontak
+</a>
 
 </footer>
 
+
 </body>
+
 </html>
-```
